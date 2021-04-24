@@ -53,7 +53,7 @@ Sorts user's Spotify playlists based on similar data such as their tempo.
 * Playlists View Feed -> Filtered Song Feed
 
 ## Wireframes
-<img src="https://github.comiToros-Spotify-Sorter/Spotify-Song-Sorter/blob/main/img/Wirefram-1.jpg?raw=true" width=800><br>
-<img src="https://github.comiToros-Spotify-Sorter/Spotify-Song-Sorter/blob/main/img/Wirefram-2.jpg?raw=true" width=800><br>
+<img src="https://github.com/iToros-Spotify-Sorter/Spotify-Song-Sorter/blob/main/img/Wireframe-1.jpg?raw=true" width=800><br>
+<img src="https://github.com/iToros-Spotify-Sorter/Spotify-Song-Sorter/blob/main/img/Wireframe-2.jpg?raw=true" width=800><br>
 
 [Link to Google Docs](https://docs.google.com/document/d/1mrlu8lpgTXW4hlGQduL4QuSLtR33p_vyEccUeKZrSEo/edit?usp=sharing)
