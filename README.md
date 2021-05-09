@@ -23,7 +23,7 @@ Sorts user's Spotify playlists based on similar data such as their tempo.
 
 **Required Must-have Stories**
 
-* User logs in to Spotify for API to access their playlists
+* User logs in to Spotify for API to access their playlists (**WIP** - Working on setting up API)
 * User picks the playlist they want to sort
 * User selects a type of data to sort the songs (specifically by bpm) inside the selected playlist by.
 * User stays logged in through app restarts
