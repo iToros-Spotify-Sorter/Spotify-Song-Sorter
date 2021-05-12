@@ -7,16 +7,27 @@
 
 import UIKit
 import CoreData
+import SpotifyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    let spotifyUrl = URL(string: "https://spotify-sorter.com/callback/")
+    let spotifyClientID = "335499aa3ba94a41918608f1e617c5da"
+    let spotifyClientSecret = "2f62c77bbf9948b0aaedc20b291b8379"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        SpotifyLogin.shared.configure(clientID: spotifyClientID, clientSecret: spotifyClientSecret, redirectURL: spotifyUrl!)
         return true
     }
+    
+    internal func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handled = SpotifyLogin.shared.applicationOpenURL(url) { (error) in }
+        return handled
+    }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -73,6 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                
             }
         }
     }
