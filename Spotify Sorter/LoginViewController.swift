@@ -45,14 +45,11 @@ class LoginViewController: UIViewController {
 
         let authURLFull = "https://accounts.spotify.com/authorize?response_type=token&client_id=" + SpotifyConstants.CLIENT_ID + "&scope=" + SpotifyConstants.SCOPE + "&redirect_uri=" + SpotifyConstants.REDIRECT_URI + "&show_dialog=false"
         
+        //let authURLFull = "https://accounts.spotify.com/authorize?response_type=code&client_id=" + SpotifyConstants.CLIENT_ID + "&scope=" + SpotifyConstants.SCOPE + "&redirect_uri=" + SpotifyConstants.REDIRECT_URI + "&show_dialog=false"
         
 
-        /*
-        let authURLFull = "https://accounts.spotify.com/authorize?client_id=" + SpotifyConstants.CLIENT_ID + "&response_type=" + SpotifyConstants.RESPONSE_TYPE + "&redirect_uri=" + SpotifyConstants.REDIRECT_URI + "&scope=" + user-read-private%20user-read-email&state=34fFs29kd09"
-        */
-        
+        //Commented out because webView depricated since iOS 12.0
         let urlRequest = URLRequest.init(url: URL.init(string: authURLFull)!)
-        
         webView.loadRequest(urlRequest)
         
         let navController = UINavigationController(rootViewController: spotifyVC)

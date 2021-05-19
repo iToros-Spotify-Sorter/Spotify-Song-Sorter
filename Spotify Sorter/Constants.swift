@@ -13,5 +13,5 @@ struct SpotifyConstants {
     static let CLIENT_SECRET = "9a882da93d6e40d598d88170a3c3691d"
     static let REDIRECT_URI = "https://spotify-ios-quick-start"
     static let SESSION_KEY = "spotifySessionKey"
-    static let SCOPE = "user-read-email"
+    static let SCOPE = "user-read-email%20playlist-modify-private%20user-modify-playback-state%20playlist-read-collaborative%20user-read-playback-position"
 }
